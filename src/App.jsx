@@ -2,10 +2,11 @@ import { AuthContext } from './context/AuthContext'
 import { AppRouter } from './routers/AppRouter'
 import './App.css'
 
+
 function App() {
   const user = {
     isLogged: true,
-    username: 'zeus'
+    username: ''
   }
 
   const tasks = [
@@ -21,7 +22,9 @@ function App() {
       user,
       tasks
     }}>
+
       <AppRouter />
+
     </AuthContext.Provider>
   )
 }

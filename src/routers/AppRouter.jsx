@@ -1,7 +1,10 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { PublicRoutes } from "./PublicRoutes"
 import { PrivateRoutes } from "./PrivateRoutes"
-import { Login } from "../pages/Login"
+import { Login, } from '../pages/Login';
+import { Register } from '../pages/Register';
+
+import { DashboardRoutes } from "./DashboardRoutes"
 
 
 export const AppRouter = () => {
@@ -14,14 +17,19 @@ export const AppRouter = () => {
           <PublicRoutes>
             {/* Colocar el componente a proteger */}
             <Login />
-
+            
           </PublicRoutes>
+        } />
+
+        <Route path='/register' element={
+          <Register/>
+          
         } />
 
         <Route path='/*' element = {
           <PrivateRoutes>
-            
-            {/* Colocar el componente a proteger */}
+
+            <DashboardRoutes/>
 
           </PrivateRoutes>
           
