@@ -1,7 +1,11 @@
-import React from 'react'
+import { createContext } from "react";
 
-export const TaskContext = () => {
-  return (
-    <div>TaskContext</div>
-  )
-}
+
+export const TaskContext = createContext();
+
+
+// export const TaskContext = () => {
+//   return (
+//     <div>TaskContext</div>
+//   )
+// }
