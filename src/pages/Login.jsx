@@ -32,17 +32,50 @@ export const Login = () => {
             <p className="text-center bg-danger p-2 text-white rounded">
               Inicia tu sesión! 😎
             </p>
+
             <div className="mb-3">
-              <label htmlFor="username" className="form-label">Name user</label>
-              <input type="text" className="form-control" id="username" aria-describedby="nameHelp"/>
-              <div id="nameHelp" className="form-text">We'll never share your name with anyone else.</div>
+              {/* Input para usuario */}
+              <label htmlFor="username" className="form-label"> Username </label>
+              <input 
+                type="text"
+                name="username"
+                autoComplete="off"
+                className="form-control mb-3"
+                // onChange = { handleInputChange }
+                // value={username}
+                // autoFocus={true}
+                id="username"
+                aria-describedby="nameHelp"
+              />
+              <div id="nameHelp" className="form-text">
+                We'll never share your name with anyone else.
+              </div>
             </div>
+
             <div className="mb-3">
-              <label htmlFor="password" className="form-label">Password user</label>
-              <input type="password" className="form-control" id="password"/>
+              {/* Input para contraseña */}
+              <label htmlFor="password" className="form-label"> Password user: </label>
+
+              <input 
+                type="password"
+                name="password"
+                autoComplete="off"
+                className="form-control mb-3"
+                id="password"
+                // onChange={handleInputChange}
+                // value={password}
+                // autoFocus={true}
+              />
             </div>
             
-            <button type="submit" className="btn btn-primary">Login</button>
+            <button
+              type="submit"
+              className="btn btn-sm btn-primary mt-4"
+            >
+                Login!
+
+            </button>
+
             <NavLink to='/register'>
               Registrate
             </NavLink>
@@ -55,4 +88,4 @@ export const Login = () => {
       </div>
     </div>
   )
-}
+};
