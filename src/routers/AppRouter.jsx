@@ -33,11 +33,9 @@ export const AppRouter = () => {
         <Route path='/*' element = {
           <PrivateRoutes>
             
-            
             <DashboardRoutes/>
             <h1> esto es privado</h1>
 
-            
           </PrivateRoutes>
           
         } />

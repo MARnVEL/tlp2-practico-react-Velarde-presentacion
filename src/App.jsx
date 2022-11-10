@@ -19,6 +19,10 @@ function App() {
 
   // esta contante almacena los datos del usuario, y la acción dispatchUser
   const [user, dispatchUser] = useReducer(authReducer, {}, init )
+  //Con el dispatchUser se modifica el estado inicial del state, el segundo parámetro del useReducer.
+  //El segundo parámetro en este caso es un objeto, pero si fuera un taskReducer podría ser un array de tareas, es decir un [].
+  
+  //Qué es el estado: Es la info que contienen en un momento determinado un componete de React
 
   //El segundo parámetro es un estado inical, si en algún lugar tenemos un estado inicial QUE NO COINCIDE CON EL ESTADO INICAL DEL COMPONENTE, con el init se VA A BUSCAR EL ESTADO EN ESE OTRO LUGAR Y SE establecen los datos del estado inial DEL 2DO PARÁMETRO.
   //*useReducer RETORNA UN NUEVO ESTADO.

@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom'
 // que provee react-router-dom
 export const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-light ">
+    <nav className="navbar navbar-expand-lg  bg-dark text-light ">
       <div className="container-fluid">
         <NavLink className="navbar-brand" to="/">
           HOME
