@@ -14,6 +14,7 @@ function App() {
 
   const init = ( ) => {
     //!Para testear el código debría cambiar el estado de "isLogged" acá. Si lo paso a false no debería dejarme entrar a las rutas privadas. Pero tengo un problema: el cambio de true a false sólo tiene efecto después de recargar/actualizar la página.
+
     return JSON.parse(localStorage.getItem('user')) || {isLogged: false}
   }
 
