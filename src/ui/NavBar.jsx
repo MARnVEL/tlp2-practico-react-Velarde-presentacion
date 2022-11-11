@@ -30,9 +30,18 @@ export const NavBar = () => {
               <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Dropdown
               </Link>
+              
               <ul className="dropdown-menu">
-                <li><Link className="dropdown-item" to="#">Action</Link></li>
-                <li><Link className="dropdown-item" to="#">Another action</Link></li>
+                <li>
+                  <Link className="dropdown-item" to="#">
+                    Action
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="#">
+                    Another action
+                  </Link>
+                </li>
                 <li><hr className="dropdown-divider"/></li>
                 <li>
                   <Link className="dropdown-item" to="#">
