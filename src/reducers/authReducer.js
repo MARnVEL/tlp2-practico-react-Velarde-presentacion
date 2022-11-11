@@ -24,6 +24,10 @@ export const authReducer = (initialState, action) => {
             }
 
         case type.logout:
+            localStorage.setItem('user',JSON.stringify({
+                isLogged: false
+            }))
+            
             return {
                 isLogged: false
             }

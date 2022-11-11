@@ -2,6 +2,9 @@ import { Route, Routes } from "react-router-dom"
 import { NavBar } from "../ui/NavBar"
 import { TodosScreen } from '../pages/TodosScreen'
 import { TaskContext } from "../context/TaskContext"
+import { UsuariosPage } from "../pages/UsuariosPage"
+import { AdminPage } from "../pages/AdminPage"
+
 
 export const DashboardRoutes = (  ) => {
 
@@ -18,7 +21,7 @@ export const DashboardRoutes = (  ) => {
     <>
       <NavBar/>
       <Routes>
-        <Route path="/todos" element = {<TodosPage/>}/>
+        <Route path="/todos" element = {<TodosScreen/>}/>
         <Route path="/users" element = {<UsuariosPage/>}/>
         <Route path="/" element = {<AdminPage/>}/>
       </Routes>

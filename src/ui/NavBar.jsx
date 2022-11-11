@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom'
 // que provee react-router-dom
 export const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg  bg-dark text-light ">
+    <nav className="navbar navbar-expand-lg  navbar-dark bg-dark text-light ">
       <div className="container-fluid">
         <NavLink className="navbar-brand" to="/">
           HOME
@@ -23,16 +23,13 @@ export const NavBar = () => {
               </NavLink>
 
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="#">Link</Link>
-            </li>
             <li className="nav-item dropdown">
               <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
+                Opciones
               </Link>
               <ul className="dropdown-menu">
-                <li><Link className="dropdown-item" to="#">Action</Link></li>
-                <li><Link className="dropdown-item" to="#">Another action</Link></li>
+                <li><Link className="dropdown-item" to="#">Usuarios</Link></li>
+                <li><Link className="dropdown-item" to="#">Admin</Link></li>
                 <li><hr className="dropdown-divider"/></li>
                 <li>
                   <Link className="dropdown-item" to="#">
