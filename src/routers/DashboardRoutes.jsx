@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom"
 import { NavBar } from "../ui/NavBar"
 import { TodosScreen } from '../pages/TodosScreen'
 import { TaskContext } from "../context/TaskContext"
+import { Home } from "../pages/Home"
 import { UsuariosPage } from "../pages/UsuariosPage"
 import { AdminPage } from "../pages/AdminPage"
 
